@@ -16,7 +16,7 @@ export class AppComponent {
 
   mostrar: boolean = true
 
-  eliminarPlato(indice: number) {
+    eliminarPlato(indice: number) {
     this.recetas.splice(indice, 1);
     console.log(indice);
   }

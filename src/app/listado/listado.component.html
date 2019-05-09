@@ -1,7 +1,24 @@
 <span></span>
 
-<form *ngIf="!mostrar" (onSalida)="eliminarPlato($event)">
+<!--
     <p>{{receta.receta}}
         <span>{{receta.plato}}</span>
-        <button (click)='eliminar()'>Eliminar</button></p>
-</form>
+        <button class="btn btn-info" (click)='eliminar()'>Eliminar</button></p> -->
+
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Receta</th>
+                <th scope="col">Plato</th>
+                <th scope="col">Accion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!---<th scope="row">1</th>-->
+                <td align="left">{{receta.receta}}</td>
+                <td align="left">{{receta.plato}}</td>
+                <td align="right"><button class="btn btn-info" (click)='eliminar()'>Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>  

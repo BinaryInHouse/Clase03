@@ -1,3 +1,5 @@
 <app-login *ngIf="mostrar" (onLogin)="mostrar=false"></app-login>
 <!--<app-listado *ngIf="!mostrar" (onSalida)="eliminarPlato($event)"></app-listado>-->
+<div *ngIf="!mostrar">
 <app-listado *ngFor="let receta of recetas; let indice = index" [indice]="indice" [rece]="receta" (onSalida)="eliminarPlato($event)"></app-listado>
+</div>
