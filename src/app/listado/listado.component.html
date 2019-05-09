@@ -1,0 +1,7 @@
+<span></span>
+
+<form *ngIf="!mostrar" (onSalida)="eliminarPlato($event)">
+    <p>{{receta.receta}}
+        <span>{{receta.plato}}</span>
+        <button (click)='eliminar()'>Eliminar</button></p>
+</form>
